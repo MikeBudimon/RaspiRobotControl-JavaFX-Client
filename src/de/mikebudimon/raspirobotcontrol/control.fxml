@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.web.WebView?>
-
-<AnchorPane fx:id="controlView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="581.0" prefWidth="1026.0" style="-fx-background-color: linear-gradient(to left, #7b4397 , #dc2430);" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.mikebudimon.raspirobotcontrol.ControllerControl">
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="controlView" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="581.0"
+            prefWidth="1026.0"
+            style="-fx-background-color: linear-gradient(to left, #7b4397 , #dc2430);"
+            xmlns="http://javafx.com/javafx/8.0.65"
+            fx:controller="de.mikebudimon.raspirobotcontrol.ControllerControl">
     <children>
-        <Button fx:id="buttonStop" layoutX="90.0" layoutY="394.0" mnemonicParsing="false" onAction="#buttonStopClick" onKeyTyped="#keyPressed" style="-fx-background-color: #44c767;">
+        <Button fx:id="buttonStop" layoutX="90.0" layoutY="394.0" mnemonicParsing="false" onAction="#buttonStopClick"
+                onKeyTyped="#keyPressed" style="-fx-background-color: #44c767;">
             <graphic>
                 <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@raspirobotcontrolapp_icons/cross.png" />
+                        <Image url="@../../../raspirobotcontrolapp_icons/cross.png"/>
                     </image>
                 </ImageView>
             </graphic>
@@ -24,75 +28,82 @@
             <children>
                 <Label text="Distance: ">
                     <font>
-                        <Font size="25.0" />
+                        <Font size="25.0"/>
                     </font>
                 </Label>
                 <Label fx:id="textDistance">
                     <font>
-                        <Font size="25.0" />
+                        <Font size="25.0"/>
                     </font>
                 </Label>
             </children>
         </HBox>
-        <Button fx:id="buttonLeft" layoutX="13.0" layoutY="394.0" mnemonicParsing="false" onAction="#buttonLeftClick" onKeyTyped="#keyPressed" style="-fx-background-color: #44c767;">
+        <Button fx:id="buttonLeft" layoutX="13.0" layoutY="394.0" mnemonicParsing="false" onAction="#buttonLeftClick"
+                onKeyTyped="#keyPressed" style="-fx-background-color: #44c767;">
             <graphic>
                 <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@raspirobotcontrolapp_icons/arrowLeft.png" />
+                        <Image url="@../../../raspirobotcontrolapp_icons/arrowLeft.png"/>
                     </image>
                 </ImageView>
             </graphic>
         </Button>
-        <Button fx:id="buttonBackward" layoutX="90.0" layoutY="463.0" mnemonicParsing="false" onAction="#buttonBackwardClick" onKeyTyped="#keyPressed" style="-fx-background-color: #44c767;">
+        <Button fx:id="buttonBackward" layoutX="90.0" layoutY="463.0" mnemonicParsing="false"
+                onAction="#buttonBackwardClick" onKeyTyped="#keyPressed" style="-fx-background-color: #44c767;">
             <graphic>
                 <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@raspirobotcontrolapp_icons/arrowDown.png" />
+                        <Image url="@../../../raspirobotcontrolapp_icons/arrowDown.png"/>
                     </image>
                 </ImageView>
             </graphic>
         </Button>
-        <Button fx:id="buttonRight" layoutX="167.0" layoutY="394.0" mnemonicParsing="false" onAction="#buttonRightClick" onKeyTyped="#keyPressed" style="-fx-background-color: #44c767;">
+        <Button fx:id="buttonRight" layoutX="167.0" layoutY="394.0" mnemonicParsing="false" onAction="#buttonRightClick"
+                onKeyTyped="#keyPressed" style="-fx-background-color: #44c767;">
             <graphic>
                 <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@raspirobotcontrolapp_icons/arrowRight.png" />
+                        <Image url="@../../../raspirobotcontrolapp_icons/arrowRight.png"/>
                     </image>
                 </ImageView>
             </graphic>
         </Button>
-        <Button fx:id="buttonForward" layoutX="90.0" layoutY="327.0" mnemonicParsing="false" onAction="#buttonForwardClick" onKeyTyped="#keyPressed" style="-fx-background-color: #44c767;">
+        <Button fx:id="buttonForward" layoutX="90.0" layoutY="327.0" mnemonicParsing="false"
+                onAction="#buttonForwardClick" onKeyTyped="#keyPressed" style="-fx-background-color: #44c767;">
             <graphic>
                 <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@raspirobotcontrolapp_icons/arrowUp.png" />
+                        <Image url="@../../../raspirobotcontrolapp_icons/arrowUp.png"/>
                     </image>
                 </ImageView>
             </graphic>
         </Button>
-        <Button fx:id="buttonBuzzer" layoutX="243.0" layoutY="327.0" mnemonicParsing="false" onAction="#buttonBuzzerClick" onKeyTyped="#keyPressed" style="-fx-background-color: #44c767;">
+        <Button fx:id="buttonBuzzer" layoutX="243.0" layoutY="327.0" mnemonicParsing="false"
+                onAction="#buttonBuzzerClick" onKeyTyped="#keyPressed" style="-fx-background-color: #44c767;">
             <graphic>
                 <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@raspirobotcontrolapp_icons/audioOn.png" />
+                        <Image url="@../../../raspirobotcontrolapp_icons/audioOn.png"/>
                     </image>
                 </ImageView>
             </graphic>
         </Button>
-        <WebView fx:id="webView" layoutX="340.0" layoutY="54.0" prefHeight="495.0" prefWidth="655.0" />
-        <ImageView fx:id="imageAlarm" fitHeight="200.0" fitWidth="200.0" layoutX="58.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true" style="visibility: false;">
+        <WebView fx:id="webView" layoutX="340.0" layoutY="54.0" prefHeight="495.0" prefWidth="655.0"/>
+        <ImageView fx:id="imageAlarm" fitHeight="200.0" fitWidth="200.0" layoutX="58.0" layoutY="54.0"
+                   pickOnBounds="true" preserveRatio="true" style="visibility: false;">
             <image>
-                <Image url="@raspirobotcontrolapp_icons/warning.png" />
+                <Image url="@../../../raspirobotcontrolapp_icons/warning.png"/>
             </image>
         </ImageView>
-        <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: #44c767;" text="Back">
+        <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack"
+                style="-fx-background-color: #44c767;" text="Back">
             <font>
-                <Font size="17.0" />
+                <Font size="17.0"/>
             </font>
         </Button>
         <Label layoutX="528.0" layoutY="11.0" prefHeight="36.0" prefWidth="280.0" text="RaspiRobotControl">
             <font>
-                <Font size="30.0" />
+                <Font size="30.0"/>
             </font>
         </Label>
     </children>

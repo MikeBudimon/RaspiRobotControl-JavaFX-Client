@@ -39,7 +39,6 @@ public class SocketConnection {
 
     public void setCommand(String mCommand) {
         this.mCommand = mCommand;
-        System.out.println(mCommand);
     }
 
     public void stop() throws IOException {
